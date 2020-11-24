@@ -25,6 +25,14 @@ function newPlayer(newPlayerColor){
 
 function setColor(assignedColor) {
   myColor = assignedColor;
+
+
+  push();
+  textSize(40);
+  textAlign("center");
+  fill("black");
+  text("welcome " + myColor, width/2, height/2);
+  pop();
 }
 
 function newConnection() {
@@ -54,15 +62,15 @@ function setup() {
     }
     return color;
   }
-
+  //
   background(getRandomColor());
 
-  push();
-  textSize(40);
-  textAlign("center");
-  fill(myColor);
-  text("welcome " + myColor, width/2, height/2);
-  pop();
+  // push();
+  // textSize(40);
+  // textAlign("center");
+  // fill(myColor);
+  // text("welcome " + myColor, width/2, height/2);
+  // pop();
   // put setup code here
 }
 
