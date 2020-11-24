@@ -40,6 +40,13 @@ function setup() {
   }
 
   background(getRandomColor());
+
+  push();
+  textSize(40);
+  textAlign("center");
+  fill(myColor);
+  text("welcome " + myColor, width/2, height/2);
+  pop();
   // put setup code here
 }
 
