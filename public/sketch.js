@@ -1,5 +1,5 @@
 let socket = io();
-let myColor = "white";
+// let myColor = "white";
 
 socket.on("connect", newConnection);
 
