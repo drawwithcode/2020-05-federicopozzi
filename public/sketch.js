@@ -50,13 +50,13 @@ function draw() {
 function mouseMoved() {
   push();
   fill(myColor);
-  rect(mouseX, mouseY, sin(mouseX)*20);
+  rect(mouseX, mouseY, sin(mouseX) * 20);
   pop();
   let message = {
     x: mouseX,
     y: mouseY,
     color: myColor,
-    size:sin(mouseX)*20,
+    size: sin(mouseX) * 20,
   };
 
   socket.emit("mouse", message);
