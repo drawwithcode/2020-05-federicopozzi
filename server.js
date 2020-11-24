@@ -24,6 +24,8 @@ function newConnection(socket) {
 
   socket.on("mouse", mouseMessage);
 
+  socket.broadcast.emit("newPlayer", clientColor);
+
   function mouseMessage(dataReceived) {
     console.log(socket.client.id, dataReceived);
     socket.broadcast.emit("mouseBroadcast", dataReceived);
